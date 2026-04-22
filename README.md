@@ -23,12 +23,19 @@ REST API — Full FastAPI backend with documented endpoints, usable independentl
 
 ## Tech Stack
 Layer            Technology  
+
 Model            Xception CNN (fine-tuned, pretrained on ImageNet)
+
 Training         PyTorch 2.5 + CUDA, albumentations, timm
+
 Backend          FastAPI, Uvicorn, OpenCV
+
 Frontend         HTML5, CSS3, Vanilla JavaScript
+
 Face Detection   OpenCV Haar Cascade
+
 Evaluation       scikit-learn (AUC, ROC, confusion matrix)
+
 
 ## Project Structure
 DeepFake/
