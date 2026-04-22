@@ -7,12 +7,19 @@ As deepfake technology becomes increasingly accessible, the ability to verify th
 
 ## Features
 Image Detection — Upload any portrait photo and receive a REAL or FAKE verdict with a confidence score in under 500ms.
+
 Video Detection — Upload a video clip for frame-by-frame analysis with per-frame confidence breakdown and overall verdict.
-Face-Focused Analysis — Haar cascade face detection isolates the facial region before classification, improving accuracy
-Real-Time Results — Animated confidence bar, natural-language explanation, and instant visual feedback
-Privacy First — Uploaded files are permanently deleted immediately after prediction — nothing is stored
-Drag and Drop — Intuitive upload interface with live preview for both images and videos
-REST API — Full FastAPI backend with documented endpoints, usable independently of the frontend
+
+Face-Focused Analysis — Haar cascade face detection isolates the facial region before classification, improving accuracy.
+
+Real-Time Results — Animated confidence bar, natural-language explanation, and instant visual feedback.
+
+Privacy First — Uploaded files are permanently deleted immediately after prediction — nothing is stored.
+
+Drag and Drop — Intuitive upload interface with live preview for both images and videos.
+
+REST API — Full FastAPI backend with documented endpoints, usable independently of the frontend.
+
 
 ## Tech Stack
 Layer            Technology  
