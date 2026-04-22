@@ -61,32 +61,53 @@ DeepFake/
 
 
 ## Getting Started
+
 Prerequisites
+
 -Python 3.12 (required for CUDA support)
+
 -NVIDIA GPU with CUDA 12.1 (recommended)
 
+
 ## Installation
+
 ### Clone the repository
+
 git clone https://github.com/yourusername/deepfake-detection.git
+
 cd deepfake-detection
 
+
 ### Install dependencies
+
 py -3.12 -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+
 py -3.12 -m pip install timm albumentations opencv-python scikit-learn fastapi uvicorn python-multipart
 
+
 ## Usage
+
 Step 1 — Prepare dataset (merge image + video datasets)
+
 py -3.12 prepare_dataset.py
 
+
 Step 2 — Train the model
+
 py -3.12 train.py --epochs 15
 
+
 Step 3 — Start the API
+
 py -3.12 -m uvicorn app:app --host 0.0.0.0 --port 8000
 
+
 Step 4 — Serve the frontend
+
 py -3.12 -m http.server 3000
+
 Then open http://localhost:3000 in your browser.
+
 
 ## API Endpoints
 Method        Endpoint      Description
